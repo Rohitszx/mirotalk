@@ -10,7 +10,7 @@ RUN apk add --no-cache \
 COPY package.json .
 COPY .env.template ./.env
 
-RUN npm install
+RUN npm install dotenv
 
 COPY app app
 COPY public public
